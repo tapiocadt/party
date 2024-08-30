@@ -11,6 +11,7 @@ body {
     align-items: center;
     place-content: center;
     place-items: center;
+    background-color: #fae3e3;
 }
 
 html {
@@ -50,27 +51,21 @@ html {
 }
 
 .link-button:hover {
-    background-color: #ffffff;
+    background-color: #eee5d8;
     color: #ec780c;
 }
 
 .top-text {
     font-size: 20px;
-    display: flex;
-    gap: 10px;
-    margin: auto;
-    align-items: center;
+    display: grid;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
-.left-text {
-    font-size: 30px;
-    display: flex;
-    gap: 10px;
-    margin: auto;
-}
-
-#days-left {
-    font-size: 60px;
+.top-text p {
+    color: #000;
+    margin: 5px;
+    /* font-weight: bold; */
 }
 
 .right-text {
