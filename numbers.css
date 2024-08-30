@@ -9,33 +9,33 @@
 
 /* Rotor group headings */
 .flipdown.flipdown__theme-dark .rotor-group-heading:before {
-  color: #ec780c;
+  color: #ffffff;
 }
 
 /* Delimeters */
 .flipdown.flipdown__theme-dark .rotor-group:nth-child(n+2):nth-child(-n+3):before,
 .flipdown.flipdown__theme-dark .rotor-group:nth-child(n+2):nth-child(-n+3):after {
-  background-color: #ec780c;
+  background-color: #ffffff;
 }
 
 /* Rotor tops */
 .flipdown.flipdown__theme-dark .rotor,
 .flipdown.flipdown__theme-dark .rotor-top,
 .flipdown.flipdown__theme-dark .rotor-leaf-front {
-  color: #FFFFFF;
-  background-color: #ec780c;
+  color: #ec780c;
+  background-color: #ffffff;
 }
 
 /* Rotor bottoms */
 .flipdown.flipdown__theme-dark .rotor-bottom,
 .flipdown.flipdown__theme-dark .rotor-leaf-rear {
-  color: #FFFFFF;
-  background-color: #ec780c;
+  color: #ec780c;
+  background-color: #ffffff;
 }
 
 /* Hinge */
 .flipdown.flipdown__theme-dark .rotor:after {
-  border-top: solid 1px #ec780c;
+  border-top: solid 1px #ffffff;
 }
 
 /********** Theme: light **********/
@@ -47,13 +47,13 @@
 
 /* Rotor group headings */
 .flipdown.flipdown__theme-light .rotor-group-heading:before {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* Delimeters */
 .flipdown.flipdown__theme-light .rotor-group:nth-child(n+2):nth-child(-n+3):before,
 .flipdown.flipdown__theme-light .rotor-group:nth-child(n+2):nth-child(-n+3):after {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 /* Rotor tops */
@@ -61,14 +61,14 @@
 .flipdown.flipdown__theme-light .rotor-top,
 .flipdown.flipdown__theme-light .rotor-leaf-front {
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 /* Rotor bottoms */
 .flipdown.flipdown__theme-light .rotor-bottom,
 .flipdown.flipdown__theme-light .rotor-leaf-rear {
   color: #333333;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 /* Hinge */
