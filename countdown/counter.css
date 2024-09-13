@@ -61,7 +61,7 @@ body {
 
 .text-block h1 {
     padding-bottom: 50px;
-    text-transform:uppercase;
+    text-transform: uppercase;
     font-size: 39px;
     color: #fff;
     max-width: 1200px;
@@ -90,7 +90,7 @@ body {
     margin: 5px auto;
 }
 
-.text-block > span {
+.text-block>span {
     display: block;
     margin: 20px;
 }
@@ -174,8 +174,20 @@ canvas {
         height: 200px;
     }
 
+    .text-block h1 {
+        font-size: 20px;
+    }
+
     .inicia p {
         color: #f07e25;
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    #start-confetti {
+        padding: 20px;
+    }
+
+    .icon-comemore {
+        width: 100;
     }
 }
