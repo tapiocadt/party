@@ -108,6 +108,10 @@ function startConfettiAnimation() {
   if (!animationStarted) {
     animationStarted = true;
     console.log("fg")
+
+    document.getElementById('confetti-icon').src = './assets/confetti-icon-after.png';
+    document.getElementById('start-confetti').classList.add('active');
+
     Draw();
   }
 }

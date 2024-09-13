@@ -107,7 +107,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     display: grid;
-    gap: 40px;
+    gap: 80px;
 }
 
 .inicia div {
@@ -116,7 +116,10 @@ body {
 }
 
 .inicia p {
-    font-size: 20px;
+    color: #f07e25;
+    font-size: 25px;
+    margin: 0;
+    max-width: 500px;
 }
 
 .confetes {
@@ -125,16 +128,26 @@ body {
     height: 100vh;
 }
 
-.confetes p {
-    margin: auto;
-    width: 500px;
-    text-align: center;
-}
-
 #start-confetti {
+    cursor: pointer;
     width: max-content;
     margin-left: auto;
     margin-right: auto;
+    border: solid 1px #f07e25;
+    border-radius: 5px;
+    padding: 50px;
+}
+
+.active {
+    background-color: #f07e25 !important;
+}
+
+#start-confetti:hover {
+    background-color: #f07e25;
+}
+
+.icon-comemore {
+    width: 150px;
 }
 
 canvas {
@@ -159,5 +172,10 @@ canvas {
     .count-down {
         width: 100%;
         height: 200px;
+    }
+
+    .inicia p {
+        color: #f07e25;
+        font-size: 18px;
     }
 }
