@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.position {
+    position: relative;
+    z-index: 1;
+}
+
+.selos {
+    background-image: url("../assets/unite.png");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* margin: auto;
+    display: flex;
+    width: min-content;
+    margin: auto;
+    height: 100vh;
+    align-items: center; */
+}
+
+.logos {
+    display: none;
+}
+
+.svg {
+    width: 200px;
+    height: fit-content;
+}
+
+.text-block {
+    padding: 100px 15px;
+    z-index: 1;
+    background-color: #f07e25;
+    width: 100%;
+    position: relative;
+    /* text-align: center; */
+}
+
+.up-divider {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: -1px;
+}
+
+.down-divider {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: -1px;
+    height: 45px;
+}
+
+.text-block h1 {
+    padding-bottom: 50px;
+    text-transform:uppercase;
+    font-size: 39px;
+    color: #fff;
+    max-width: 1200px;
+    margin: 5px auto;
+    text-align: center;
+    /* margin-left: 170px; */
+
+    display: flex;
+    gap: 9px;
+    justify-content: center;
+}
+
+.text-block h1 span {
+    display: flex;
+    color: #002172;
+}
+
+.text-block h1 span a {
+    /* color: #e60000; */
+}
+
+.text-block p {
+    color: #fff;
+    font-size: 18px;
+    max-width: 1200px;
+    margin: 5px auto;
+}
+
+.text-block > span {
+    display: block;
+    margin: 20px;
+}
+
+.inicia {
+    position: absolute;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: max-content;
+    top: 50%;
+    transform: translateY(-50%);
+    display: grid;
+    gap: 40px;
+}
+
+.inicia div {
+    display: grid;
+    gap: 15px;
+}
+
+.inicia p {
+    font-size: 20px;
+}
+
+.confetes {
+    background-color: white;
+    position: relative;
+    height: 100vh;
+}
+
+.confetes p {
+    margin: auto;
+    width: 500px;
+    text-align: center;
+}
+
+#start-confetti {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+canvas {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+}
+
+@media (max-width: 550px) {
+    .logos {
+        display: block;
+        margin: auto;
+        width: 90%;
+    }
+
+    .selos {
+        display: grid;
+        background-image: none;
+    }
+
+    .count-down {
+        width: 100%;
+        height: 200px;
+    }
+}
