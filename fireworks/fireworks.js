@@ -33,7 +33,7 @@ const configs = {
       delay: 0.1
     },
     rate: {
-      delay: 0.15,
+      delay: 0.2,
       quantity: 1
     },
     size: {
@@ -134,7 +134,7 @@ const configs = {
             },
             decay: 0.1,
             speed: {
-              min: 10,
+              min: 5,
               max: 25
             },
             direction: "outside",

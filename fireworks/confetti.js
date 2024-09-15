@@ -1,6 +1,5 @@
 let animationStarted = false;
 
-
 let W = window.innerWidth;
 let H = window.innerHeight;
 const canvas = document.getElementById("canvas");
@@ -67,7 +66,7 @@ function Draw() {
     particle = particles[i];
 
     particle.tiltAngle += particle.tiltAngleIncremental;
-    particle.y += (Math.cos(particle.d) + 3 + particle.r / 2) / 2;
+    particle.y += (Math.cos(particle.d) + 3 + particle.r / 2) / 3;
     particle.tilt = Math.sin(particle.tiltAngle - i / 3) * 15;
 
     if (particle.y <= H) remainingFlakes++;
@@ -107,9 +106,8 @@ canvas.height = H;
 function startConfettiAnimation() {
   if (!animationStarted) {
     animationStarted = true;
-    console.log("fg")
 
-    document.getElementById('confetti-icon').src = './assets/confetti-icon-after.png';
+    document.getElementById('canvas').classList.add('active');
     document.getElementById('start-confetti').classList.add('active');
 
     Draw();
