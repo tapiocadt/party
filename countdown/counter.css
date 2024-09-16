@@ -86,10 +86,10 @@ body {
   justify-content: center;
 }
 
-.text-block h1 span {
+/* .text-block h1 span {
   display: flex;
   color: #002172;
-}
+} */
 
 /* .text-block h1 span a { */
   /* color: #e60000; */
@@ -126,7 +126,9 @@ body {
 }
 
 .text-cinza {
-  font-size: 20px;
+  font-size: 30px;
+  font-family: 'Helvetica-Bold';
+  text-transform: uppercase;
   color: #4F4F4F;
 }
 
