@@ -1,10 +1,21 @@
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../assets/fonts/Helvetica.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Helvetica-bold';
+  src: url('../assets/fonts/Helvetica-Bold.ttf') format('truetype');
+}
+
 body {
   margin: 0;
 }
 
 * {
+  font-family: 'Helvetica';
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 
 .position {
@@ -41,7 +52,7 @@ body {
   background-color: #f07e25;
   width: 100%;
   position: relative;
-  /* text-align: center; */
+  text-align: justify;
 }
 
 .up-divider {
@@ -62,12 +73,13 @@ body {
 .text-block h1 {
   padding-bottom: 50px;
   text-transform: uppercase;
-  font-size: 39px;
+  font-size: 55px;
   color: #fff;
   max-width: 1200px;
   margin: 5px auto;
   text-align: center;
   /* margin-left: 170px; */
+  font-family: 'Helvetica-Bold';
 
   display: flex;
   gap: 9px;
@@ -79,13 +91,13 @@ body {
   color: #002172;
 }
 
-.text-block h1 span a {
+/* .text-block h1 span a { */
   /* color: #e60000; */
-}
+/* } */
 
 .text-block p {
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
   max-width: 1200px;
   margin: 5px auto;
 }
@@ -96,30 +108,32 @@ body {
 }
 
 .inicia {
+  display: grid;
+  gap: 60px;
   position: absolute;
-  z-index: 1;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
+  margin: auto;
   text-align: center;
   width: max-content;
+
+  left: 0;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
-  display: grid;
-  gap: 80px;
-}
-
-.inicia div {
-  display: grid;
-  gap: 15px;
 }
 
 .inicia p {
-  color: #f07e25;
-  font-size: 25px;
   margin: 0;
-  max-width: 500px;
+}
+
+.text-cinza {
+  font-size: 20px;
+  color: #4F4F4F;
+}
+
+.text-principal {
+  font-family: 'Helvetica-Bold';
+  font-size: 45px;
+  color: #f07e25;
 }
 
 .confetes {
@@ -128,7 +142,7 @@ body {
   height: 100vh;
 }
 
-#start-confetti {
+/* #start-confetti {
   cursor: pointer;
   width: max-content;
   margin-left: auto;
@@ -154,7 +168,7 @@ body {
 #start-confetti.active #confetti-icon-before,
 #confetti-icon-after {
   display: none;
-}
+} */
 
 .icon-comemore {
   width: 150px;
@@ -189,14 +203,22 @@ body {
     height: 200px;
   }
 
-  .text-block h1 {
-    font-size: 20px;
+  .inicia {
+    width: fit-content;
+    gap: 40px;
   }
 
-  .inicia p {
-    color: #f07e25;
+  .text-block h1 {
+    font-size: 40px;
+  }
+  
+  /* .text-cinza {
     font-size: 16px;
   }
+  
+  .text-principal {
+    font-size: 16px;
+  } */
 
   #start-confetti {
     padding: 20px;

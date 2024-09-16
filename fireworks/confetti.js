@@ -103,15 +103,24 @@ canvas.height = H;
 //Draw();
 
 
-function startConfettiAnimation() {
-  if (!animationStarted) {
-    animationStarted = true;
+// function startConfettiAnimation() {
+//   if (!animationStarted) {
+//     animationStarted = true;
 
-    document.getElementById('canvas').classList.add('active');
-    document.getElementById('start-confetti').classList.add('active');
+//     document.getElementById('canvas').classList.add('active');
+//     document.getElementById('start-confetti').classList.add('active');
 
-    Draw();
-  }
+//     Draw();
+//   }
+// }
+
+// document.getElementById('start-confetti').addEventListener('click', startConfettiAnimation);
+
+if (!animationStarted) {
+  animationStarted = true;
+
+  document.getElementById('canvas').classList.add('active');
+  // document.getElementById('start-confetti').classList.add('active');
+
+  Draw();
 }
-
-document.getElementById('start-confetti').addEventListener('click', startConfettiAnimation);
