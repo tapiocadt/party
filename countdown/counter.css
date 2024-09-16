@@ -24,11 +24,13 @@ body {
 }
 
 .selos {
-  background-image: url("../assets/unite.png");
+  display: grid;
+  place-content: center;
+  /* background-image: url("../assets/unite.png"); */
   min-height: 100vh;
-  background-attachment: fixed;
+  /* background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   /* margin: auto;
     display: flex;
     width: min-content;
@@ -38,7 +40,8 @@ body {
 }
 
 .logos {
-  display: none;
+  width: 700px;
+  /* display: none; */
 }
 
 .svg {
@@ -71,14 +74,13 @@ body {
 }
 
 .text-block h1 {
+  font-size: 80px;
   padding-bottom: 50px;
   text-transform: uppercase;
-  font-size: 55px;
-  color: #fff;
+  color: #fff4ca;
   max-width: 1200px;
   margin: 5px auto;
   text-align: center;
-  /* margin-left: 170px; */
   font-family: 'Helvetica-Bold';
 
   display: flex;
@@ -86,30 +88,25 @@ body {
   justify-content: center;
 }
 
-/* .text-block h1 span {
-  display: flex;
-  color: #002172;
-} */
-
-/* .text-block h1 span a { */
-  /* color: #e60000; */
-/* } */
+.text-block h1 a {
+  color: #f8c132;
+}
 
 .text-block p {
-  color: #fff;
+  color: #fff4ca;
   font-size: 20px;
   max-width: 1200px;
   margin: 5px auto;
 }
 
-.text-block > span {
+.text-block>span {
   display: block;
   margin: 20px;
 }
 
 .inicia {
   display: grid;
-  gap: 60px;
+  gap: 20px;
   position: absolute;
   margin: auto;
   text-align: center;
@@ -123,54 +120,51 @@ body {
 
 .inicia p {
   margin: 0;
+  text-transform: uppercase;
 }
 
 .text-cinza {
-  font-size: 30px;
+  font-size: 70px;
   font-family: 'Helvetica-Bold';
-  text-transform: uppercase;
   color: #4F4F4F;
 }
 
 .text-principal {
   font-family: 'Helvetica-Bold';
-  font-size: 45px;
+  font-size: 57px;
   color: #f07e25;
 }
 
 .confetes {
   background-color: white;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
 }
 
-/* #start-confetti {
-  cursor: pointer;
-  width: max-content;
-  margin-left: auto;
-  margin-right: auto;
-  border: solid 1px #f07e25;
-  border-radius: 5px;
-  padding: 50px;
+.logo-hashtag {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 50% 48%;
+  gap: 20px;
 }
 
-#start-confetti.active {
-  background-color: #f07e25 !important;
+.logo-hashtag p {
+  font-family: 'Helvetica-bold';
+  color: #f8c132;
+  text-align: end;
+  font-size: 45px;
+  text-transform: capitalize !important;
 }
 
-#start-confetti:hover {
-  background-color: #f07e25;
+.logo-hashtag a {
+  font-family: 'Helvetica-bold';
+  color: #f9520f;
 }
 
-#confetti-icon-before,
-#start-confetti.active #confetti-icon-after {
-  display: block;
-}
 
-#start-confetti.active #confetti-icon-before,
-#confetti-icon-after {
-  display: none;
-} */
+.logo-hashtag img {
+  width: 100%;
+}
 
 .icon-comemore {
   width: 150px;
@@ -188,6 +182,25 @@ body {
   position: relative;
 }
 
+@media (max-width: 1050px) {
+  .inicia{
+    width: unset;
+  }
+
+  .logo-hashtag {
+    grid-template-columns: none;
+  }
+
+  .logo-hashtag img {
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .logo-hashtag p {
+    text-align: center;
+  }
+}
+
 @media (max-width: 650px) {
   .logos {
     display: block;
@@ -195,10 +208,10 @@ body {
     width: 90%;
   }
 
-  .selos {
+  /* .selos {
     display: grid;
     background-image: none;
-  }
+  } */
 
   .count-down {
     width: 100%;
@@ -208,18 +221,24 @@ body {
   .inicia {
     width: fit-content;
     gap: 40px;
+    padding: 0px 10px;
   }
 
   .text-block h1 {
-    font-size: 40px;
+    display: block;
+    font-size: 28px;
   }
-  
-  /* .text-cinza {
-    font-size: 16px;
-  } */
-  
+
+  .text-cinza {
+    font-size: 18px;
+  }
+
   .text-principal {
-    font-size: 40px;
+    font-size: 15px;
+  }
+
+  .logo-hashtag {
+    grid-template-columns: none;
   }
 
   #start-confetti {
@@ -229,4 +248,8 @@ body {
   .icon-comemore {
     width: 100;
   }
+
+  .logo-hashtag p {
+    font-size: 40px;
+}
 }
