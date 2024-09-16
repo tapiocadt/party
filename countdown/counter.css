@@ -97,6 +97,7 @@ body {
   font-size: 20px;
   max-width: 1200px;
   margin: 5px auto;
+  text-align: left;
 }
 
 .text-block>span {
@@ -152,7 +153,7 @@ body {
   font-family: 'Helvetica-bold';
   color: #f8c132;
   text-align: end;
-  font-size: 45px;
+  font-size: 60px;
   text-transform: capitalize !important;
 }
 
