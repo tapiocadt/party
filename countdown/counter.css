@@ -88,7 +88,7 @@ body {
   justify-content: center;
 }
 
-.text-block h1 a {
+.text-block h1 b {
   color: #f8c132;
 }
 
@@ -157,9 +157,9 @@ body {
   text-transform: capitalize !important;
 }
 
-.logo-hashtag a {
+.logo-hashtag b {
   font-family: 'Helvetica-bold';
-  color: #f9520f;
+  color: #f07e25;
 }
 
 
